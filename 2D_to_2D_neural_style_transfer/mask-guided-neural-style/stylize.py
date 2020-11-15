@@ -360,7 +360,7 @@ def  main(args):
     print('Iteration %d: loss = %f' % (args.iteration, sess.run(total_loss)))
     result = sess.run(target_net['input'])
     #output_path = os.path.join(args.output_dir, 'result_final.png')
-    moreInfo = "StyleWeight" + str(args.style_weight) + "ContentWeight" + str(args.content_weight) + "Iters" + str(args.iteration)
+    moreInfo = "ContentWeight" + str(args.content_weight) + "StyleWeight" + str(args.style_weight) +  "Iters" + str(args.iteration)
     output_path = os.path.join(args.output_dir, os.path.split(os.path.splitext(args.content_img)[0])[1]+'2'+os.path.split(os.path.splitext(args.style_img)[0])[1]+ moreInfo + '.png')
 
     #import pdb
