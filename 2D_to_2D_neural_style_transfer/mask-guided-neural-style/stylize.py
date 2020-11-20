@@ -361,7 +361,7 @@ def  main(args):
     result = sess.run(target_net['input'])
     #output_path = os.path.join(args.output_dir, 'result_final.png')
     moreInfo = "Content" + str(args.content_weight) + "Style" + str(args.style_weight) +  "Iters" + str(args.iteration)
-    output_path = os.path.join(args.output_dir, os.path.split(os.path.splitext(args.content_img)[0])[1]+'2'+os.path.split(os.path.splitext(args.style_img)[0])[1]+ moreInfo + '.png')
+    output_path = os.path.join(args.output_dir, os.path.split(os.path.splitext(args.content_img)[0])[1]+'_to_'+os.path.split(os.path.splitext(args.style_img)[0])[1]+ moreInfo + '.jpg')
 
     #import pdb
     #pdb.set_trace()
